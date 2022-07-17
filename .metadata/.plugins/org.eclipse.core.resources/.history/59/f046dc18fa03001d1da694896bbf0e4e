@@ -1,0 +1,9 @@
+package onetomany_bi;
+
+public class Items {
+	int id;
+	
+	String name;
+	String producer;
+	
+}

@@ -1,0 +1,33 @@
+package jdbc_prc_day1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class jdbcFirstProgram {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_prc","root","Sachin@9171");
+		
+		Statement st = con.createStatement();
+		
+		//st.execute("insert into students values(5,'Raja',25)");
+		ResultSet rs = st.executeQuery("select * from students");
+		
+		con.close();
+		
+		while(rs.next()) {
+			System.out.print("Id :" + rs.getInt(0));
+			System.out.print(" Name : "+rs.getString(1));
+			System.out.print(" Age : "+ rs.getInt(2));
+			
+		}
+		System.out.println("deleted");
+		
+	}
+	
+}

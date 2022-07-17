@@ -1,0 +1,14 @@
+package oneTooneuni.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class AadharDao {
+	public EntityManager getEntityManager() {
+		EntityManagerFactory emf =  Persistence.createEntityManagerFactory("sachin");
+		EntityManager em = emf.createEntityManager();
+		return em;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package hibernate_prc_dto;
+
+public class Student {
+
+}

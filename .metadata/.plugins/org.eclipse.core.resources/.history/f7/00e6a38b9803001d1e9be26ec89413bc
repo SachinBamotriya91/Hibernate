@@ -1,0 +1,5 @@
+package oneToone.task.dao;
+
+public class PancardDao {
+
+}

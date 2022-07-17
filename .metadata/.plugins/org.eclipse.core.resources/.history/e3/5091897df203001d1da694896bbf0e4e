@@ -1,0 +1,10 @@
+package onetoone_bi;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Person {
+	int id;
+	String name;
+	String address;
+}

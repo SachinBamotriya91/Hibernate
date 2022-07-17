@@ -1,0 +1,40 @@
+package oneToone_uni.test;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import oneToone_uni.dto.Company;
+import oneToone_uni.dto.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EntityManagerFactory emf =  Persistence.createEntityManagerFactory("sachin");
+		EntityManager em = emf.createEntityManager();
+		EntityTransaction et = em.getTransaction();
+		
+		Company company =new Company();
+		
+		company.setCid(1001);
+		company.setCname("Clarivate Analytics");
+		company.setAddress("Bengaluru India");
+		company.setCeo("jerre L. Stead");
+		company.setRevanue(1250000000);
+		
+		Employee emp1 = new Employee();
+		emp1.setEmpid(1);
+		emp1.setName("Sachin");
+		emp1.setAddress("Indore");
+		emp1.setPhone(987654321);
+		emp1.setRole("ASE");
+		emp1.setSalary(12345);
+		emp1.setCompany(company);
+		
+		
+		
+	}
+
+}

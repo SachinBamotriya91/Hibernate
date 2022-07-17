@@ -1,0 +1,30 @@
+package onetomany_bi;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Cart {
+	@Id
+	int id;
+	
+	String name;
+	List<Items> items;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+	
+}

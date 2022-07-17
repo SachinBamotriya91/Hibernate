@@ -1,0 +1,9 @@
+package oneToone_uni;
+
+public class Company {
+	
+	String cname;
+	String address;
+	String ceo;
+	long revanue;
+}

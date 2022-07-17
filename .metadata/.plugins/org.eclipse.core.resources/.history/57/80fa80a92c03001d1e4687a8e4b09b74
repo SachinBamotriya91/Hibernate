@@ -1,0 +1,17 @@
+package jdbc_prc_day2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class PreparedStatement {
+	public static void main(String[] args) {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_prc","root","Sachin@9171");
+		
+		String sql="insert into emp values(?,?,?)";  
+		PreparedStatement stmt=con.prepareStatement(sql);  
+
+
+	}
+}

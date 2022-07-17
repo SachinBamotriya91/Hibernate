@@ -1,0 +1,5 @@
+package manyToone.dto;
+
+public class Item {
+
+}

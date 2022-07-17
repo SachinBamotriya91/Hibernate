@@ -1,0 +1,8 @@
+package onetoone_bi;
+
+public class AadharCard {
+	int id;
+	String name;
+	String dob;
+	
+}

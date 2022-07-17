@@ -1,0 +1,18 @@
+package oneToone_uni;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Employee {
+	@Id
+	int empid;
+	String name;
+	String address;
+	long phone;
+	long salary;
+	String role;
+	
+	
+
+}

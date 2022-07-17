@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="onetoOne_task.dto.Person"/>
+    <fullyQualifiedTypeName name="oneToone.task.dao.PersonDao"/>
+    <fullyQualifiedTypeName name="onetoOne_task.dto.Persons"/>
+    <fullyQualifiedTypeName name="oneToone.task.dao.PancardDao"/>
+    <fullyQualifiedTypeName name="onetoOne_task.dto.PanCard"/>
+</qualifiedTypeNameHistroy>

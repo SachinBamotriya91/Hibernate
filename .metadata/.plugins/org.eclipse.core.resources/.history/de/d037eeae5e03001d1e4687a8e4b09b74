@@ -1,0 +1,11 @@
+package onetoMany.dto;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Cart {
+	private int id;
+	private String name;
+	private List<Item> item;
+	
+}

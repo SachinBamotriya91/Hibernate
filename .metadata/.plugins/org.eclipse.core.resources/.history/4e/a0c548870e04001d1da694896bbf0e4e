@@ -1,0 +1,16 @@
+package oneToone_uni;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Company {
+	@Id
+	int cid;
+	String cname;
+	String address;
+	String ceo;
+	long revanue;
+}

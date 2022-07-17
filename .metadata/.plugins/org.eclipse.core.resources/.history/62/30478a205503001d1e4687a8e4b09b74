@@ -1,0 +1,13 @@
+package onetooneuni_dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Person {
+	@Id
+	private int pid;
+	private String name;
+	private String city;
+	
+}

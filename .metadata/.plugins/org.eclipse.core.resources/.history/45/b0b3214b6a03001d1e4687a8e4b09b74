@@ -1,0 +1,29 @@
+package manytomany.dto;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class CoursesTest {
+	public static void main(String[] args) {
+		EntityManagerFactory emf =  Persistence.createEntityManagerFactory("sachin");
+		EntityManager em = emf.createEntityManager();
+		EntityTransaction et = em.getTransaction();
+		
+		Courses courses =new Courses();
+		courses.setId(100);
+		courses.setCname("Java");
+		
+		Courses courses1 =new Courses();
+		courses1.setId(101);
+		courses1.setCname("web Technology");
+		
+		Courses courses2 =new Courses();
+		courses2.setId(103);
+		courses2.setCname("Advance Java");
+		
+		
+		
+	}
+}

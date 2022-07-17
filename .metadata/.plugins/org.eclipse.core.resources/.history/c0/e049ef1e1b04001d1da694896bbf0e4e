@@ -1,0 +1,25 @@
+package manyToone_uni.test;
+
+import manyToone_uni.dto.Company;
+import manyToone_uni_dao.CompanyDao;
+
+public class TestCompany {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CompanyDao cd = new CompanyDao();
+		
+		System.out.println("**********************FindCompnayById Start***************************");
+		Company company  =cd.findCompanyById(1001);
+		System.out.println(company);
+		System.out.println("**********************FindCompnayById Ended***************************");
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

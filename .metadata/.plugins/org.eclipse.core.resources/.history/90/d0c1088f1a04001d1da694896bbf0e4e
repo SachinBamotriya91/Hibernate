@@ -1,0 +1,53 @@
+package manyToone_uni.test;
+
+import manyToone_uni.dto.Company;
+import manyToone_uni.dto.Employee;
+import manyToone_uni_dao.CompanyDao;
+import manyToone_uni_dao.EmployeeDao;
+
+public class TestEmployee {
+	public static void main(String[] args) {
+		EmployeeDao ed =new EmployeeDao();
+		int empid = 1;
+		
+		CompanyDao cd = new CompanyDao();
+		Company company  =cd.findCompanyById(1001);
+		
+		
+//		System.out.println("**********************FindAll Started***************************");
+//		ed.findAllEmployees();
+//		System.out.println("**********************FindAll End***************************");
+		
+		
+//		System.out.println("**********************FindEmployeeById Started***************************");
+//
+		Employee employee=ed.findEmployeeById(empid);
+		System.out.println(employee);
+//		
+//		System.out.println("**********************FindEmployeeById End***************************");
+//		
+//		
+//		System.out.println("*********************UpdateEmployeeById Started");
+////	
+//		Employee emp1 = new Employee();
+//		emp1.setEmpid(4);
+//		emp1.setName("Nilesh");
+//		emp1.setAddress("Depalpur");
+//		emp1.setPhone(880000000);
+//		emp1.setSalary(12345);
+//		emp1.setRole("ASE");
+//		emp1.setCompany(company);
+//		ed.updateEmployee(emp1);
+//		
+////		
+//		System.out.println("*********************UpdateEmployeeById Ended");
+		/*
+		 * System.out.println("*********************deleteEmployee Started");
+		 * ed.deleteEmployee(5);
+		 * System.out.println("*********************deleteEmployee Ended");
+		 */
+		
+		
+
+	}
+}

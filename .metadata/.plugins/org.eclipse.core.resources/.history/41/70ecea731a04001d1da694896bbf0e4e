@@ -1,0 +1,45 @@
+package manyToone_uni.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Company {
+	@Id
+	int cid;
+	String cname;
+	String address;
+	String ceo;
+	long revanue;
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getCeo() {
+		return ceo;
+	}
+	public void setCeo(String ceo) {
+		this.ceo = ceo;
+	}
+	public long getRevanue() {
+		return revanue;
+	}
+	public void setRevanue(long revanue) {
+		this.revanue = revanue;
+	}
+	
+}

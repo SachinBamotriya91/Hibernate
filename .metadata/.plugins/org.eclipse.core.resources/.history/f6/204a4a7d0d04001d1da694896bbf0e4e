@@ -1,0 +1,12 @@
+package oneToone_uni;
+
+import java.util.List;
+
+public class Company {
+	int cid;
+	String cname;
+	String address;
+	String ceo;
+	long revanue;
+	List<Employee> employees;
+}

@@ -1,0 +1,21 @@
+package manyToone_uni.test;
+
+import manyToone_uni_dao.EmployeeDao;
+
+public class TestEmployee {
+	public static void main(String[] args) {
+		EmployeeDao ed =new EmployeeDao();
+		
+		System.out.println("**********************FindAll Started***************************");
+		ed.findAllEmployees();
+		System.out.println("**********************FindAll End***************************");
+		int empid = 1;
+		
+		System.out.println("**********************FindEmployeeById Started***************************");
+
+		ed.findEmployeeById(empid);
+		
+		System.out.println("**********************FindEmployeeById End***************************");
+
+	}
+}

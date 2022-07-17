@@ -1,0 +1,10 @@
+package hibernate_prc_test;
+
+public class StudentFindAll {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

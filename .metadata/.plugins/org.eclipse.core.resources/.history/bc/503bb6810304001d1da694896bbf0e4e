@@ -1,0 +1,14 @@
+package manyTomany_bi;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Student_BI")
+public class Student {
+	int id;
+	String name;
+	List<Courses> courses;
+}

@@ -1,0 +1,5 @@
+package hibernate_prc_test;
+
+public class StudentDelete {
+
+}

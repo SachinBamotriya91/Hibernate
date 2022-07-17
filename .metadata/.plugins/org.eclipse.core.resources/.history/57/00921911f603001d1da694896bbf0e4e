@@ -1,0 +1,10 @@
+package onetoone_bi;
+
+public class Test1FindPerson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

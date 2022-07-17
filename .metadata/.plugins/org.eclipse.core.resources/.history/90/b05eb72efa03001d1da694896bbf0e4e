@@ -1,0 +1,7 @@
+package onetomany_bi;
+
+public class Cart {
+	int id;
+	
+	String name;
+}
